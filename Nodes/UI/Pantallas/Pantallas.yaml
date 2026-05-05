@@ -847,7 +847,7 @@ Children:
                       DataType: LocalizedText
                       ReferenceType: HasParameter
                       ModellingRule: Optional
-                      Value: {"LocaleId":"en-US","Text":"{0:n5}"}
+                      Value: {"LocaleId":"","Text":"{0:n3}"}
                     - Name: ns=2;Source0
                       Type: BaseDataVariableType
                       DataType: BaseDataType
@@ -921,7 +921,7 @@ Children:
                   Type: BaseDataVariableType
                   DataType: Color
                   ModellingRule: Optional
-                  Value: "#3b3b3b5d"
+                  Value: "#b3b3b3"
                 - Name: ContentType
                   Type: BaseVariableType
                   DataType: InputTypeEnum
