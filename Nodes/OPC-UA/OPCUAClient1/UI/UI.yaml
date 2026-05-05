@@ -1,0 +1,5 @@
+Name: ns=9;UI
+Id: ns=9;g=9fbd8f4de7d64420ad6f0873dfcf8c29
+Type: UICategoryFolder
+Children:
+- File: Pantallas/Pantallas.yaml

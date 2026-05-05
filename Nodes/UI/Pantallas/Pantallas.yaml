@@ -373,7 +373,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "/Objects/DemoWebinarCliente/Model/Vp"
+                        Value: "/Objects/DemoWebinarCliente/OPC-UA/OPCUAClient1/Objects/DemoWebbinar_OPC/Model/Vp"
                     - Name: ns=2;Source1
                       Type: BaseDataVariableType
                       DataType: BaseDataType
@@ -382,7 +382,7 @@ Children:
                       - Name: DynamicLink
                         Type: DynamicLink
                         DataType: NodePath
-                        Value: "/Objects/DemoWebinarCliente/Model/Cp"
+                        Value: "/Objects/DemoWebinarCliente/OPC-UA/OPCUAClient1/Objects/DemoWebbinar_OPC/Model/Cp"
                 - Name: MinValue
                   Type: BaseDataVariableType
                   DataType: Float
@@ -428,6 +428,10 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
+                - Name: Editable
+                  Type: BaseDataVariableType
+                  DataType: Boolean
+                  ModellingRule: Optional
               - Name: TextBox1
                 Type: TextBox
                 Children:
@@ -438,7 +442,7 @@ Children:
                   - Name: DynamicLink
                     Type: DynamicLink
                     DataType: NodePath
-                    Value: "/Objects/DemoWebinarCliente/Model/Consumo_Instantaneo"
+                    Value: "/Objects/DemoWebinarCliente/OPC-UA/OPCUAClient1/Objects/DemoWebbinar_OPC/Model/Consumo_Instantaneo"
                     Children:
                     - Name: Mode
                       Type: BaseVariableType
@@ -612,34 +616,14 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   Children:
-                  - Name: StringFormatter1
-                    Type: StringFormatter
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/DemoWebinarCliente/OPC-UA/OPCUAClient1/Objects/DemoWebbinar_OPC/Model/Demanda_Maxima"
                     Children:
-                    - Name: Format
-                      Type: BaseDataVariableType
-                      DataType: LocalizedText
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: {"LocaleId":"","Text":"{0:n1}"}
-                    - Name: ns=2;Source0
-                      Type: BaseDataVariableType
-                      DataType: BaseDataType
-                      ReferenceType: HasSource
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/DemoWebinarCliente/Model/Demanda_Maxima"
-                        Children:
-                        - Name: Mode
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
                     - Name: Mode
-                      Type: PropertyType
+                      Type: BaseVariableType
                       DataType: DynamicLinkMode
-                      ReferenceType: HasComponent
                       ModellingRule: Optional
                       Value: 2
                 - Name: Width
@@ -839,34 +823,14 @@ Children:
                   Type: BaseDataVariableType
                   DataType: LocalizedText
                   Children:
-                  - Name: StringFormatter1
-                    Type: StringFormatter
+                  - Name: DynamicLink
+                    Type: DynamicLink
+                    DataType: NodePath
+                    Value: "/Objects/DemoWebinarCliente/OPC-UA/OPCUAClient1/Objects/DemoWebbinar_OPC/Model/Consumo_Acumulado"
                     Children:
-                    - Name: Format
-                      Type: BaseDataVariableType
-                      DataType: LocalizedText
-                      ReferenceType: HasParameter
-                      ModellingRule: Optional
-                      Value: {"LocaleId":"","Text":"{0:n3}"}
-                    - Name: ns=2;Source0
-                      Type: BaseDataVariableType
-                      DataType: BaseDataType
-                      ReferenceType: HasSource
-                      Children:
-                      - Name: DynamicLink
-                        Type: DynamicLink
-                        DataType: NodePath
-                        Value: "/Objects/DemoWebinarCliente/Model/Consumo_Acumulado"
-                        Children:
-                        - Name: Mode
-                          Type: BaseVariableType
-                          DataType: DynamicLinkMode
-                          ModellingRule: Optional
-                          Value: 2
                     - Name: Mode
-                      Type: PropertyType
+                      Type: BaseVariableType
                       DataType: DynamicLinkMode
-                      ReferenceType: HasComponent
                       ModellingRule: Optional
                       Value: 2
                 - Name: Width
@@ -912,7 +876,7 @@ Children:
                   Type: BaseVariableType
                   DataType: Size
                   ModellingRule: Optional
-                  Value: -4.0
+                  Value: 1.0
                 - Name: BottomMargin
                   Type: BaseVariableType
                   DataType: Size

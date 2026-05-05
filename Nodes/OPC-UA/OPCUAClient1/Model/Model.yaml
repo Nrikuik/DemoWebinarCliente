@@ -8,14 +8,59 @@ Children:
   DataType: Boolean
 - File: Instances/Instances.yaml
 - File: Types/Types.yaml
-- Name: ns=9;CIKW
+- Name: ns=9;Consumo_Instantaneo
   Id: ns=9;g=9624e341ed6058533b4c127b86321f4a
   Type: BaseDataVariableType
-  DataType: Float
+  DataType: Double
+  Value: 1.4914629607456058
+  Children:
+  - Name: ns=9;ExpressionEvaluator1
+    Id: ns=9;g=966ecc2a9544c2ae49777e64d3f2b19f
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Id: ns=9;g=0ecda84cce452a9a60585329a350b440
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "({0}*{1}*(1.73205)*(0.87))/1000"
+    - Name: ns=2;Source0
+      Id: ns=9;g=5198e6cd36d2f67bd6a32c3b2345acdd
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Value: {"Type":10,"Body":29.02777862548828}
+      Children:
+      - Name: ns=9;DynamicLink
+        Id: ns=9;g=6f732b7186bfff9c3856fcefa6691ef9
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Vp"
+        Children:
+        - Class: Reference
+          Type: Resolves
+          Target: ns=9;g=0e6e786d3a20fe6b911998eeb658266d
+    - Name: ns=2;Source1
+      Id: ns=9;g=3597c44a2d04c1998739201a1bd0eb61
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Value: {"Type":10,"Body":34.09722137451172}
+      Children:
+      - Name: ns=9;DynamicLink
+        Id: ns=9;g=d39a07a09b10cf8350b1a8ac8f96e9a7
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../Cp"
+        Children:
+        - Class: Reference
+          Type: Resolves
+          Target: ns=9;g=8057d112c81933399d86ea88aa44eb82
 - Name: ns=9;Vp
   Id: ns=9;g=0e6e786d3a20fe6b911998eeb658266d
   Type: BaseDataVariableType
   DataType: Float
+  Value: 29.02777862548828
   Children:
   - Name: ns=9;ExpressionEvaluator1
     Id: ns=9;g=42e049081ced6473882a2899d1c2f9e7
@@ -32,7 +77,7 @@ Children:
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
-      Value: {"Type":10,"Body":0.0}
+      Value: {"Type":10,"Body":21.944448471069336}
       Children:
       - Name: ns=9;DynamicLink
         Id: ns=9;g=d8acb9c0995fecf7518c82ab50972213
@@ -48,7 +93,7 @@ Children:
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
-      Value: {"Type":10,"Body":0.0}
+      Value: {"Type":10,"Body":70.55555725097656}
       Children:
       - Name: ns=9;DynamicLink
         Id: ns=9;g=3070bc8123539cddf21c99652df8acb3
@@ -64,7 +109,7 @@ Children:
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
-      Value: {"Type":10,"Body":0.0}
+      Value: {"Type":10,"Body":23.61111068725586}
       Children:
       - Name: ns=9;DynamicLink
         Id: ns=9;g=e3407e0a873210eef935ab70fca2f48a
@@ -95,6 +140,7 @@ Children:
   Id: ns=9;g=8057d112c81933399d86ea88aa44eb82
   Type: BaseDataVariableType
   DataType: Float
+  Value: 34.09722137451172
   Children:
   - Name: ns=9;ExpressionEvaluator1
     Id: ns=9;g=23e8fbde1d796d82009bd39b1ecb774a
@@ -111,7 +157,7 @@ Children:
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
-      Value: {"Type":10,"Body":0.0}
+      Value: {"Type":10,"Body":17.5}
       Children:
       - Name: ns=9;DynamicLink
         Id: ns=9;g=3c2ea8363392736b6bdaed24f4283aa6
@@ -127,7 +173,7 @@ Children:
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
-      Value: {"Type":10,"Body":0.0}
+      Value: {"Type":10,"Body":68.33333587646484}
       Children:
       - Name: ns=9;DynamicLink
         Id: ns=9;g=1b7ff83af053b80bcaae9b090f439d0e
@@ -143,7 +189,7 @@ Children:
       Type: BaseDataVariableType
       DataType: BaseDataType
       ReferenceType: HasSource
-      Value: {"Type":10,"Body":0.0}
+      Value: {"Type":10,"Body":50.55555725097656}
       Children:
       - Name: ns=9;DynamicLink
         Id: ns=9;g=9ef62f8b74df0e2ece5319d9fea74861
@@ -328,3 +374,13 @@ Children:
         - Class: Reference
           Type: Resolves
           Target: ns=9;g=2a2783829a094cd2455dbcf33c892887
+- Name: ns=9;Consumo_Acumulado
+  Id: ns=9;g=948d0b4f8dcd27c2e5ee7f0198bd325f
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 0.18818146678036402
+- Name: ns=9;Demanda_Maxima
+  Id: ns=9;g=f4bbbba6bfbae1b3fd16d49ff52370cd
+  Type: BaseDataVariableType
+  DataType: Double
+  Value: 2.8732162676088877

@@ -59,12 +59,20 @@ Children:
 - Name: SynchronizeNodeIdsOnStart
   Type: BaseDataVariableType
   DataType: Boolean
-  Value: true
 - Name: Objects
   Type: BaseObjectType
   Children:
   - Name: ns=9;DemoWebbinar_OPC
-    Id: ns=9;g=93de7de114ef0dbefc374fbd24e2137b
+    Id: ns=9;g=2c9af4f457eb2d3463baef7161018390
     Type: ProjectFolder
     Children:
+    - File: UI/UI.yaml
     - File: Model/Model.yaml
+- Name: RequestedPublishingInterval
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:00.1000000"
+- Name: RequestedSamplingInterval
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:00.1000000"

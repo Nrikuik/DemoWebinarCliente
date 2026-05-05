@@ -38,15 +38,15 @@ Project:
    Uri: '33c12cd8375847e35dc01d5030efa168#DemoWebbinar_OPC'
    ServerUri: 33c12cd8375847e35dc01d5030efa168
  Statistics:
-  TotalNodeCount: 506
-  Objects: 125
+  TotalNodeCount: 524
+  Objects: 129
   ObjectTypes: 4
-  Variables: 377
+  Variables: 391
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
-  References: 26
+  References: 30
   ReferenceTypes: 0
-  Files: 27
+  Files: 29
  Nodes:
  - File: Nodes/DemoWebinarCliente.yaml
