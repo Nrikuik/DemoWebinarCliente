@@ -38,10 +38,10 @@ Project:
    Uri: '33c12cd8375847e35dc01d5030efa168#DemoWebbinar_OPC'
    ServerUri: 33c12cd8375847e35dc01d5030efa168
  Statistics:
-  TotalNodeCount: 452
-  Objects: 120
+  TotalNodeCount: 505
+  Objects: 125
   ObjectTypes: 4
-  Variables: 328
+  Variables: 376
   VariableTypes: 0
   DataTypes: 0
   Methods: 0
