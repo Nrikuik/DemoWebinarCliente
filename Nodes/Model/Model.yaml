@@ -1,0 +1,7 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Endpoint
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opc.tcp://localhost:59100"
