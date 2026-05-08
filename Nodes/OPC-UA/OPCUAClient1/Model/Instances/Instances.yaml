@@ -2,31 +2,29 @@ Name: ns=9;Instances
 Id: ns=9;g=c58e9f8ce74efebaf8d3648c88c59941
 Type: FolderType
 Children:
-- Name: ns=9;Bomba1
-  Id: ns=9;g=0b3ed86a921e1a5a76f4fd3be637c072
-  Type: Bomba
+- Name: ns=9;Ventilador2
+  Id: ns=9;g=0ef3e661a8f53234474d785007fe9d0b
+  Type: Ventilador
   Children:
   - Name: Estado
-    Id: ns=9;g=695177446140b7faaa67fdc74092a7e2
+    Id: ns=9;g=8d2b4138e90e90980427fe5600176edc
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
   - Name: Corriente
-    Id: ns=9;g=d68c5c8531b88e0a4a1c6e36b08658de
+    Id: ns=9;g=468098c3af04cbe5e40b6a56d6913f49
     Type: BaseDataVariableType
     DataType: Float
-    Value: 17.5
   - Name: Voltaje
-    Id: ns=9;g=9e28f7a74d4ed1f59b09ea7bcfe76e00
+    Id: ns=9;g=c6971dbb0f4c9afa5ec898c7dcaa4e05
     Type: BaseDataVariableType
     DataType: Float
-    Value: 21.944448471069336
   - Name: Potencia_Activa
-    Id: ns=9;g=13de17c3fc055aa811f03a88b4610024
+    Id: ns=9;g=d0911eb147f87241090084147cce7eb2
     Type: BaseDataVariableType
     DataType: Float
   - Name: Energia_Acumulada
-    Id: ns=9;g=f72af24d2f4e8d432ed20b5007a4c4e3
+    Id: ns=9;g=2a2783829a094cd2455dbcf33c892887
     Type: BaseDataVariableType
     DataType: Float
 - Name: ns=9;Ventilador1
@@ -82,28 +80,30 @@ Children:
     Id: ns=9;g=068af898148bdd30c91d5c094e7c6df1
     Type: BaseDataVariableType
     DataType: Float
-- Name: ns=9;Ventilador2
-  Id: ns=9;g=0ef3e661a8f53234474d785007fe9d0b
-  Type: Ventilador
+- Name: ns=9;Bomba1
+  Id: ns=9;g=0b3ed86a921e1a5a76f4fd3be637c072
+  Type: Bomba
   Children:
   - Name: Estado
-    Id: ns=9;g=8d2b4138e90e90980427fe5600176edc
+    Id: ns=9;g=695177446140b7faaa67fdc74092a7e2
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
   - Name: Corriente
-    Id: ns=9;g=468098c3af04cbe5e40b6a56d6913f49
+    Id: ns=9;g=d68c5c8531b88e0a4a1c6e36b08658de
     Type: BaseDataVariableType
     DataType: Float
+    Value: 17.5
   - Name: Voltaje
-    Id: ns=9;g=c6971dbb0f4c9afa5ec898c7dcaa4e05
+    Id: ns=9;g=9e28f7a74d4ed1f59b09ea7bcfe76e00
     Type: BaseDataVariableType
     DataType: Float
+    Value: 21.944448471069336
   - Name: Potencia_Activa
-    Id: ns=9;g=d0911eb147f87241090084147cce7eb2
+    Id: ns=9;g=13de17c3fc055aa811f03a88b4610024
     Type: BaseDataVariableType
     DataType: Float
   - Name: Energia_Acumulada
-    Id: ns=9;g=2a2783829a094cd2455dbcf33c892887
+    Id: ns=9;g=f72af24d2f4e8d432ed20b5007a4c4e3
     Type: BaseDataVariableType
     DataType: Float
